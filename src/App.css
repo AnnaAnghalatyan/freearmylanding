@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
-}
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rajdhani', sans-serif;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  min-height: 100%;
+  height: 100%;
+  color: #fff;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  box-sizing: border-box;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+img {
+  max-width: 100%;
+}
+.about-header {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.about-us {
+  text-align: center;
+}
+.comp-name {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
-.App-link {
-  color: #61dafb;
+.join-btn {
+  min-width: 135px;
+  border-radius: 50px;
+  background: linear-gradient(to right, #3fcaff 0%, #a4ffb0 51%, #3fcaff 100%);
+  background-size: 200% auto;
+  padding: 0px 35px;
+  color: #222222;
+  letter-spacing: 1px;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  line-height: 50px;
+  outline: none !important;
+  box-shadow: 0px 10px 30px rgba(163, 255, 177, 0.2);
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  text-transform: uppercase;
+  border: none;
+}
+.btn-wrapper {
+  text-align: right;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.intro-section {
+  padding-top: 150px;
+}
+nav {
+  z-index: 9;
+  background: #2c2172;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.text-right {
+  text-align: right;
+}
+.align-center {
+  align-items: center;
+}
+
+.join-btn:hover {
+  background-position: right center;
+  color: #22195e;
+}
+#root {
+  height: 100%;
+}
+.p-20 {
+  padding: 20px;
+}
+
+.intro {
+  color: #fff;
+  height: 100%;
+  background: url("./assets/img/home-banner.jpg");
+}
+
+.brave-section {
+  padding: 40px;
+}
+.brave-content {
+  background: linear-gradient(to right, #231a60 0%, #3c338d 51%, #231a60 100%);
+}
+.right-img {
+  margin-left: 0px;
+  position: relative;
+  left: 70px;
+}
+.brave-img-wrapper {
+  padding: 10px;
+  border: 2px dashed #46cdf9;
+}
+@media screen and (max-width: 600px) {
+  .btn-wrapper, .comp-name {
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+  .intro {
+    height: auto;
+  }
+}
+@media screen and (max-width: 993px){
+  .brave-section {
+    text-align: center;
+    padding: 10px;
+  }
+  .brave-img-wrapper {
+    border: none;
+  }
+  .right-img {
+    left: unset;
   }
 }
